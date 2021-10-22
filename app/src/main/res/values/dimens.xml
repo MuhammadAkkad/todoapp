@@ -3,6 +3,7 @@
     <dimen name="box_inset_layout_padding">0dp</dimen>
     <dimen name="inner_frame_layout_padding">5dp</dimen>
 
+    <dimen name="margin_1">1dp</dimen>
     <dimen name="margin_2">2dp</dimen>
     <dimen name="margin_4">4dp</dimen>
     <dimen name="margin_6">6dp</dimen>

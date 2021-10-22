@@ -1,14 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/margin_24"
     tools:context=".fragments.AddFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <EditText
+        android:id="@+id/title_et_frg_update"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:paddingStart="@dimen/margin_20"
+        android:paddingEnd="@dimen/margin_20"
+        android:background="@android:color/transparent"
+        android:hint="@string/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <Spinner
+        android:id="@+id/priority_sp_frg_update"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:paddingStart="@dimen/margin_14"
+        android:paddingEnd="@dimen/margin_14"
+        android:entries="@array/priorities"
+        android:layout_marginTop="@dimen/margin_12"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_et_frg_update" />
+
+    <EditText
+        android:id="@+id/description_et_frg_update"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_12"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="@string/description"
+        android:padding="@dimen/margin_20"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priority_sp_frg_update" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
